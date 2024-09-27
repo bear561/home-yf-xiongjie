@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: '标体';
+    src: url('../font/方正标语体_简.TTF');
+}
+
+body {
+    background-color: #fff;
+    background-image: url(../img/bgi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo>img {
+    width: 100px;
+    height: 100px;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: #000 1px solid;
+    box-shadow: 0 0 30px #000;
+    z-index: 999;
+    overflow: hidden;
+}
+
+
+
+
+.account-login {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 300px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.input-account {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: #ccc 2px solid;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.input-account:focus {
+    outline: none;
+}
+
+.input-password {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: #ccc 2px solid;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.input-password:focus {
+    outline: none;
+}
+
+.btn-login-account {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    width: 300px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #1135b6;
+    border: none;
+}
+
+
+
+
+.register {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.register:hover {
+    color: #1705de;
+}
+
+.icon {
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+#hide-password {
+    display: none;
+}
+
+input:focus {
+    border-bottom: #1135b6 2px solid;
+}
